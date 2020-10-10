@@ -23,13 +23,13 @@ allprojects {
  
 ``` groovy
 dependencies {
-	  implementation 'com.github.Eng-AhmedShehata:Custom-View-Group-Loading:Tag'
+	  implementation 'com.github.Eng-AhmedShehata:Validate-Me:Tag'
 	}
 ```
 
 **Hint :**  
  replace Tag with latest verion here
- [![](https://jitpack.io/v/Eng-AhmedShehata/Custom-View-Group-Loading.svg)](https://jitpack.io/#Eng-AhmedShehata/Custom-View-Group-Loading)
+[![](https://jitpack.io/v/Eng-AhmedShehata/Validate-Me.svg)](https://jitpack.io/#Eng-AhmedShehata/Validate-Me)
 
 
 ---
