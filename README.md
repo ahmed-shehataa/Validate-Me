@@ -119,13 +119,43 @@ List<ValidateModel> validateModels = new ArrayList<>();
 ### Add your custom validation: (2 ways)   
 ### 1:
 use ->  ValidateME.validateCustom(yourRegexPattern, yourText)   
+``` kotlin
+	ValidateME.validateCustom("[a-zA-Z0-9]{2}", "m2")
+```
 yourRegexPattern: Pass your [Regex Pattern](https://www.vogella.com/tutorials/JavaRegularExpressions/article.html) here.    
 yourText: Pass your text the you wanna validate it.   
 
 Then:  
-pass the ValidateME.validateCustom(yourRegexPattern, yourText) to validtor class like this   
-TODO add pic   
+Pass the ValidateME.validateCustom(yourRegexPattern, yourText) to validtor class like this   
 
+``` kotlin
+
+	ValidateME.checkAllValidation(
+            listOf(
+                ValidateME.validateEmail("ahsdw@yahoo.com"),
+                ValidateME.validateCustom("[a-zA-Z0-9]{2}", "m2")
+                /**
+                 *   add more validation types here
+                 */
+            ),
+            onValidationResult = object : ValidateME.OnValidationResult {
+                override fun onSuccess() {
+                    // so, continue your flow after a successfully validation
+
+                }
+
+                override fun onError(validateErrorType: ValidateErrorType?, validatePosition: Int) {
+                    // handle your error here after validation has failed
+                    val value = when (validateErrorType) {
+                        ValidateErrorType.Custom -> "Custom error"
+			// add other types here
+                        
+                    }
+                    
+                }
+            }
+        )
+```
 
 
 
