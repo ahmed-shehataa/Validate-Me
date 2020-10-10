@@ -21,16 +21,15 @@ allprojects {
 
 **Step 2.** Add the dependency
  
+ **Hint :**  
+ replace Tag with latest verion here
+[![](https://jitpack.io/v/Eng-AhmedShehata/Validate-Me.svg)](https://jitpack.io/#Eng-AhmedShehata/Validate-Me)   
+
 ``` groovy
 dependencies {
 	  implementation 'com.github.Eng-AhmedShehata:Validate-Me:Tag'
 	}
 ```
-
-**Hint :**  
- replace Tag with latest verion here
-[![](https://jitpack.io/v/Eng-AhmedShehata/Validate-Me.svg)](https://jitpack.io/#Eng-AhmedShehata/Validate-Me)
-
 
 ---
 
