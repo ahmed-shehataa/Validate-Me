@@ -35,10 +35,15 @@ dependencies {
 ---
 
 ## How to use it:   
-TODO make a preview pic for methods
+<p align="left">
+	<img src="1.png"  width="600"  />
+</p>   
 
-in kotlin:   
+<p align="left">
+	<img src="2.png"  width="600"  />
+</p>   
 
+In kotlin:   
 ``` kotlin
 ValidateME.checkAllValidation(
             listOf(
@@ -77,7 +82,7 @@ ValidateME.checkAllValidation(
 
 ```
 
-in java:   
+In java:   
 ``` java
 List<ValidateModel> validateModels = new ArrayList<>();
 
@@ -117,12 +122,12 @@ List<ValidateModel> validateModels = new ArrayList<>();
 ```
 
 ### Add your custom validation: (2 ways)   
-### 1:
-use ->  ValidateME.validateCustom(yourRegexPattern, yourText)   
+### Way no.1:   
+Use ->  ValidateME.validateCustom(yourRegexPattern, yourText)   
 ``` kotlin
 	ValidateME.validateCustom("[a-zA-Z0-9]{2}", "m2")
 ```
-yourRegexPattern: Pass your [Regex Pattern](https://www.vogella.com/tutorials/JavaRegularExpressions/article.html) here.    
+yourRegexPattern: Pass your [Regex Pattern](https://www.vogella.com/tutorials/JavaRegularExpressions/article.html).    
 yourText: Pass your text the you wanna validate it.   
 
 Then:  
@@ -159,7 +164,7 @@ Pass the ValidateME.validateCustom(yourRegexPattern, yourText) to validtor class
 
 
 
-### 2: (more customization but need more code)
+### Way no.2: (more customization but need more code)   
 
 First:   
 make your own validtor method and make it return a ValidateModel corresponding to your bussiness logic
