@@ -355,7 +355,7 @@ class ValidateMETest {
                         ValidateErrorType.Password -> "pass"
                         ValidateErrorType.PasswordConfirm -> "confirm"
                         ValidateErrorType.Custom -> "custom"
-                        null -> ""
+                        else -> ""
                     }
                     println(value)
                 }

@@ -1,5 +1,7 @@
 package com.ashehata.validateme;
 
+import android.widget.RadioButton;
+
 import com.ashehata.mylibrary.ValidateErrorType;
 import com.ashehata.mylibrary.ValidateME;
 import com.ashehata.mylibrary.ValidateModel;
@@ -35,19 +37,30 @@ public class Try {
                     public void onError(@Nullable ValidateErrorType validateErrorType, int validatePosition) {
                         // handle your error here after validation has failed
                         switch (validateErrorType) {
-                            case Email :
+                            case RegularNumber:
+                                break;
+                            case Email:
                                 //TODO
                                 break;
-                            case PhoneNumber :
+                            case PhoneNumber:
                                 //TODO
                                 break;
-                            /*
-                             * And so on
-                             */
-
+                            case TextNumber:
+                                break;
+                            case Password:
+                                break;
+                            case PasswordConfirm:
+                                break;
+                            case Custom:
+                                break;
                         }
                     }
                 }
         );
+    }
+
+    private ValidateModel checkIfChecked(boolean isChecked) {
+        if (isChecked) return new ValidateModel(true, null);
+        else return new ValidateModel(false, Custom);
     }
 }
