@@ -162,7 +162,7 @@ ValidateME.checkAllValidation(
 
 
 
-### Way no.2: (more customization but need more code)   
+### Way no.2: (More customization)   
 
 First:   
 Make your own validtor method and make it return a ValidateModel corresponding to your bussiness logic
@@ -177,7 +177,7 @@ private ValidateModel checkIfChecked(boolean isChecked) {
 ```
 
 Then:   
-Pass it to to validtor class like this    
+Pass it to to validtor class.
 
 Finally:   
 You can handle error message if field not valid like this.   
@@ -261,7 +261,7 @@ override fun onError(validateErrorType: ValidateErrorType?, validatePosition: In
 
 ```
 ### Very important tip:   
-If you validate 2 things or more than two of the same type you need check the position of it in the list like this:   
+If you validate 2 things or more than two of the same type you need to check the position of it in the list like this:   
 
 ``` java
 List<ValidateModel> validateModels = new ArrayList<>();
