@@ -42,6 +42,28 @@ dependencies {
 	<img src="2.png"  width="600"  />
 </p>   
 
+## Check here what are the types of validations that we can handle:
+
+``` kotlin
+validateRegularNumber(
+             yourNum: Int,
+             minValue: Int,
+             maxValue: Int,
+             maxNumDigit: Int)
+	
+validatePhoneNumber(
+             yourNum: String,
+             maxValue: Int
+        )
+	
+validateEmail(email: String)	
+
+validatePasswordAndConfirm(pass: String, confirmPass: String, minChar: Int)
+
+validateCustom(pattern: String, yourField: String)
+```
+## Example: [kotlin | java]   
+
 In kotlin:   
 ``` kotlin
 ValidateME.checkAllValidation(
